@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/6d9a7214cc.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="nav">
+              <h1 class="logo">Bhagyashri katkamwar</h1>
+             <ul id="sidemenu">
+               <li><a href="#">Home</a></li>
+               <li><a href="#about">About</a></li>
+               
+               <li><a href="#My-Projects">Projects</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fa-solid fa-xmark " onclick="closemenu()"></i>
+             </ul>
+             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header">
+
+            <div class="header-text">
+                <h3>Hello,It's Me</h3>
+                <h1> <span>Bhagyashri Katkamwar</span>  </h1>
+                <h2>And I'm a <span class="multiple-text"></span></h2><br>
+                I have finished B.tech computer science in 2023
+            </div>
+            <div class="image">
+                <img src="bhagyaphotho.jpeg" alt="">
+            </div>
+            </div>
+            <a href="#nav"  class="btn btn-danger arrow"><i class="fa-solid fa-arrow-up"></i></a>
+
+        </div>
+    </div>
+    <div id="about">
+        
+            <div class="row">
+               
+                <div class=" col-7 ">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="about-me p-4">Computer engineering graduate with expertise in Java full-stack development, blending front-end and
+                        back-end proficiency.
+                        •Proven track record in designing scalable solutions, paired with strong analytical skills.
+                        •Effective communicator, collaborator, and problem-solver. Passionate about using innovative
+                        technologies to create robust, user-centric applications.</p>
+                    <div class="tab-titles ">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul class="skills">
+                            <li><button class="btn btn-outline-dark skillbtn">C++</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">HTML</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">CSS</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">JavaScript</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">Java</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">Spring</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">Hibernate</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">SpringBoot</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">Angular</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">React</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2023</span> <br>Bachelor of Technology in Computer Science Engineering(CGPA 8.01)<br>
+                                Shreeyash College of Engineering & Technology, Aurangbad
+                            </li>
+                            <li><span>2019</span> <br>HSC (68.62%)<br>
+                                Yeshwant Mahavidyalaya, Nanded</li>
+                            <li><span>2017</span><br> SSC (85.40%)
+                                Vimalabai Deshmukh girls school</li>
+                        </ul>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="My-Projects">
+      
+        <div class="row projects">
+            <h1 class="text-center mt-4 title">My Projects</h1>
+               
+            <div class="project col-3">
+                <div class="pro-desc">
+                  <img src="voiceassistant1.webp" class="img"  alt="">
+               <h5 class="text-center pro-title">Voice Assistant</h3>
+               <p class="description">•Developed an Android Voice Assistant App using Java in Android Studio that showcases expertise in
+                mobile application development, enabling hands-free interaction through voice commands.
+                 </p>
+</h5></div>
+            </div>
+            <div class="project col-3">
+                <div class="pro-desc">
+                <img src="big-five-personality-traits-template.jpg" class="img" alt="">
+                <h5 class="text-center pro-title">Big five Personality Test</h3>
+                    <p class="description-md">The Big Five Personality Test, also known as the Five-Factor Model (FFM), is a widely used psychological model that measures individuals' personality traits across five dimensions:</p>
+            </div>
+            
+            </div>
+        </div>
+            <div id="contact">
+                <div class="container">
+                    <div class="contact">
+                        <div class="contact-left">
+                          <h1 class="sub-title">Contact Me</h1>
+                          <p><i class="fa-solid fa-paper-plane"></i>katkamwarbhagyashree@gmail.com</p>
+                          <p><i class="fa-solid fa-square-phone"></i>8830152896</p>
+                          <div class="social-icons">
+                          <a href=""><i class="fa-brands fa-facebook"></i></a>
+                          <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                          <a href=""><i class="fa-brands fa-instagram"></i></a>
+                          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                           
+                          </div>
+                          <a href="Bhagyashri-katkamwar-FlowCV-Resume-20231214 (1).pdf" download class="btn btn-outline-danger btn2">Download Cv</a>
+                        </div>
+                        <div class="contact-right">
+                               <form action="">
+                                <input type="text" name="Name" id="" placeholder="Your name" required>
+                                <input type="email" name="email" id="" placeholder="enter email" required>
+                                  <textarea name="message" id=""  rows="6" placeholder="your message"></textarea>
+                                  <button type="submit" class="btn btn-outline-danger btn2">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="copyright">
+            <p>copyright  © bhagyashri katkamwar</p>
+           </div>
+
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName('tab-links');
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+                
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.left="350px";
+        }
+        function closemenu(){
+            sidemenu.style.left="-250px";
+        }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://kit.fontawesome.com/6d9a7214cc.js" crossorigin="anonymous"></script>	
+
+<script src="script.js"></script>
+</body>
+</html>
